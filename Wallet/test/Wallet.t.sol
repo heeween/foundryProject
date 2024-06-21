@@ -13,18 +13,18 @@ contract WalletTest is Test {
     }
 
     function _send(uint256 amount) private {
-        (bool ok, ) = address(wallet).call{value: amount}("");
+        (bool ok,) = address(wallet).call{value: amount}("");
         require(ok, "send ETH failed");
     }
 
-    function testEthBalance() public {
+    function testEthBalance() public view {
         console.log("Eth Balance", address(this).balance);
         console.log("Eth address", address(this));
         console.log("Eth address", address(wallet).balance);
     }
 
     function testSendEth() public {
-        uint bal = address(wallet).balance;
+        address(wallet).balance;
         deal(address(1), 100);
         assertEq(address(1).balance, 100);
 
