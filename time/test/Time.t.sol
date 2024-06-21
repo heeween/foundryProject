@@ -1,4 +1,4 @@
-//SPDX-identifier:MIT
+//SPDX-License-Identifier:MIT
 pragma solidity ^0.8.24;
 
 import "forge-std/Test.sol";
@@ -39,7 +39,6 @@ contract TimeTest is Test {
     }
 
     function testBlockNumber() public {
-        uint b = block.number;
         vm.roll(999);
         assertEq(block.number, 999);
     }
