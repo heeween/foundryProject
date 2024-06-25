@@ -12,6 +12,8 @@ interface IWETH {
 contract ForkTest is Test {
     IWETH public weth;
 
+    event Deposit(address indexed dst, uint256 wad);
+
     function setUp() public {
         weth = IWETH(0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2);
     }
@@ -21,6 +23,9 @@ contract ForkTest is Test {
         console.log(msg.sender);
         uint256 balBefore = weth.balanceOf(address(this));
         console.log("balance before", balBefore);
+
+        vm.expectEmit(true, false, false, false);
+        emit Deposit(address(this), 100);
 
         weth.deposit{value: 100}();
 
