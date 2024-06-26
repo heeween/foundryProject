@@ -7,3 +7,9 @@
 [submodule "Wallet/lib/v3-periphery"]
 	path = Wallet/lib/v3-periphery
 	url = https://github.com/Uniswap/v3-periphery
+[submodule "Wallet/lib/v3-core"]
+	path = Wallet/lib/v3-core
+	url = https://github.com/Uniswap/v3-core
+[submodule "Wallet/lib/openzeppelin-contracts"]
+	path = Wallet/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts

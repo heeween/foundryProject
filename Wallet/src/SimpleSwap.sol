@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-pragma solidity =0.7.6;
+pragma solidity ^0.8.24;
 pragma abicoder v2;
 
 import "@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol";
@@ -11,8 +11,8 @@ contract SimpleSwap {
     address public constant WETH9 = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2;
     uint24 public constant feeTier = 3000;
 
-    constructor(ISwapRouter _swapRouter) {
-        swapRouter = _swapRouter;
+    constructor(address _swapRouter) {
+        swapRouter = ISwapRouter(_swapRouter);
     }
 
     function swapWETHForDAI(uint256 amountIn) external returns (uint256 amountOut) {
