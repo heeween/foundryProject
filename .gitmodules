@@ -16,3 +16,12 @@
 [submodule "uniswap/lib/forge-std"]
 	path = uniswap/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "uniswap/lib/v3-core"]
+	path = uniswap/lib/v3-core
+	url = https://github.com/Uniswap/v3-core
+[submodule "uniswap/lib/v3-periphery"]
+	path = uniswap/lib/v3-periphery
+	url = https://github.com/Uniswap/v3-periphery
+[submodule "uniswap/lib/openzeppelin-contracts"]
+	path = uniswap/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
