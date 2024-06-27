@@ -13,3 +13,6 @@
 [submodule "Wallet/lib/openzeppelin-contracts"]
 	path = Wallet/lib/openzeppelin-contracts
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "uniswap/lib/forge-std"]
+	path = uniswap/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
