@@ -25,3 +25,15 @@
 [submodule "uniswap/lib/openzeppelin-contracts"]
 	path = uniswap/lib/openzeppelin-contracts
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "uniswapV3/lib/forge-std"]
+	path = uniswapV3/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "uniswapV3/lib/openzeppelin-contracts"]
+	path = uniswapV3/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "uniswapV3/lib/v3-periphery"]
+	path = uniswapV3/lib/v3-periphery
+	url = https://github.com/Uniswap/v3-periphery
+[submodule "uniswapV3/lib/v3-core"]
+	path = uniswapV3/lib/v3-core
+	url = https://github.com/Uniswap/v3-core
